@@ -1,5 +1,16 @@
 use yew::prelude::*;
 
+#[function_component(TestExample)]
+pub fn test_example() -> Html {
+    let text = "Test Example";
+
+    html! {
+        <div>
+            { text }
+        </div>
+    }
+}
+
 #[function_component]
 fn App() -> Html {
     let counter = use_state(|| 0);
@@ -15,6 +26,7 @@ fn App() -> Html {
         <div>
             <button {onclick}>{"+1"}</button>
             <p>{ *counter }</p>
+            <TestExample />
         </div>
     }
 }
