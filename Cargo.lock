@@ -510,6 +510,9 @@ dependencies = [
 name = "rs-yew-test01"
 version = "0.1.0"
 dependencies = [
+ "implicit-clone",
+ "wasm-bindgen",
+ "web-sys",
  "yew",
 ]
 
